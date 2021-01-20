@@ -355,8 +355,8 @@ import * as easing from "@cristalix/client-api/lib/easing";
             }
         }
         switch (event.key) {
-            case Keyboard.KEY_UP: { shiftButtonCursor(+1); break; };
-            case Keyboard.KEY_DOWN: { shiftButtonCursor(-1); break; };
+            case Keyboard.KEY_UP: { shiftButtonCursor(-1); break; };
+            case Keyboard.KEY_DOWN: { shiftButtonCursor(+1); break; };
             case Keyboard.KEY_RETURN: { pressEnter(); break; }
         }
     });
@@ -409,8 +409,6 @@ import * as easing from "@cristalix/client-api/lib/easing";
         
         buttonsBG.children[picked_item].enabled = false;
         buttonCursor.width.value = maxWiddth+19;
-        
-
     }
 
     let buttons = gui.rect({});
